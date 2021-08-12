@@ -1,0 +1,9 @@
+---
+applications:
+- name: tennis-rest-api
+  buildpack: nodejs_buildpack
+  host: tennis-rest-api
+  stack: cflinuxfs3
+  memory: 512M
+  disk_quota: 512M
+  instances: 1

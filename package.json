@@ -1,0 +1,19 @@
+{
+  "name": "anchor_tennis",
+  "version": "1.0.0",
+  "description": "Refactoring existing code Imagine you work for a consultancy company, and one of your colleagues has been doing some work for the Tennis Society (see below). The contract is for 10 hours of billable work, and your colleague has spent 9 hours working on it. Unfortunately they have now fallen ill. They say the work has been completed, and the tests all pass.",
+  "main": "tennis.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha '*.test.js'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "lowdb": "^1.0.0",
+    "uuid": "^3.3.3"
+  }
+}
