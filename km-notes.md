@@ -14,6 +14,9 @@ Fourth priority would be testing of functional and non-functional requirements. 
 
 Without the first 3 priorities above completed, there is no negotiation possible, nothing is going to production. After the top 3 priorities are in place (#3 is an perpetually on going item) then there is at least the possiblity to properly scope if all functionality can be completed in time, and if not there is more than one possible option in renegotiating the release.
 
+## Fifth Priority
+Documentation would preferably be done on an on-going basis, but comphrension documentation may be deprioritized compared to the above 4 priorites. This would include a full and descriptive read-me and architecture documents.
+
 # Hacks
 ## Auditability: who changed what and when
 Logging was added server side to each api avaiable to log the ip address that used the operation. The ip address could then be tied to a user.
