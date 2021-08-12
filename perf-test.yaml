@@ -1,0 +1,31 @@
+config:
+  target: "http://localhost:3000"
+  processor: "./my-functions.js"
+  phases:
+    - duration: 10 
+      arrivalRate: 5
+      name: Warm up
+    - duration: 120
+      arrivalRate: 5
+      rampTo: 53 
+      name: Ramp up load
+  payload:
+    path: "input.csv"
+    fields:
+      - "gameid"
+    order: sequence
+    skipHeader: true
+scenarios:
+  - name: "Get game score"
+    flow:
+      - get:
+          url: "/games/{{ gameid }}"
+          capture:
+            json: "$[0].id"
+            as: "doctorId"
+      # - post:
+      #     url: "/visits"
+      #     beforeRequest: "setDate"
+      #     json:
+      #       doctorId: "{{ doctorId }}"
+      #       patientId: "{{ patientId }}"
